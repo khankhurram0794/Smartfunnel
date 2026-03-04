@@ -1,0 +1,100 @@
+{
+    "feature_columns": [
+        "hour",
+        "day_of_week",
+        "month",
+        "is_weekend",
+        "price",
+        "category_depth",
+        "category_l1_encoded",
+        "total_events",
+        "unique_products",
+        "category_diversity",
+        "brand_diversity",
+        "avg_price_viewed",
+        "num_sessions",
+        "num_view",
+        "num_cart",
+        "view_to_cart_rate",
+        "engagement_score",
+        "session_events",
+        "session_products",
+        "session_avg_price",
+        "session_duration_min",
+        "product_views",
+        "unique_viewers",
+        "product_conversion_rate"
+    ],
+    "model_type": "xgboost",
+    "training_date": "2025-11-13T07:13:27.786115",
+    "metrics": {
+        "accuracy": 0.8743175611895709,
+        "roc_auc": 0.9525250385066943,
+        "f1_score": 0.7383554020604024,
+        "precision": 0.6248177287804253,
+        "recall": 0.9023186810926443,
+        "confusion_matrix": [
+            [
+                1379278,
+                210726
+            ],
+            [
+                37991,
+                350937
+            ]
+        ],
+        "classification_report": {
+            "0": {
+                "precision": 0.9731942207160391,
+                "recall": 0.8674682579414894,
+                "f1-score": 0.9172948382138901,
+                "support": 1590004.0
+            },
+            "1": {
+                "precision": 0.6248177287804253,
+                "recall": 0.9023186810926443,
+                "f1-score": 0.7383554020604024,
+                "support": 388928.0
+            },
+            "accuracy": 0.8743175611895709,
+            "macro avg": {
+                "precision": 0.7990059747482322,
+                "recall": 0.8848934695170669,
+                "f1-score": 0.8278251201371463,
+                "support": 1978932.0
+            },
+            "weighted avg": {
+                "precision": 0.9047262934423711,
+                "recall": 0.8743175611895709,
+                "f1-score": 0.8821271027766423,
+                "support": 1978932.0
+            }
+        },
+        "feature_importance": {
+            "hour": "0.023771757",
+            "day_of_week": "0.012828296",
+            "month": "0.012321644",
+            "is_weekend": "0.0",
+            "price": "0.0026847366",
+            "category_depth": "0.01582822",
+            "category_l1_encoded": "0.025404226",
+            "total_events": "0.08280618",
+            "unique_products": "0.023110008",
+            "category_diversity": "0.010304416",
+            "brand_diversity": "0.008473223",
+            "avg_price_viewed": "0.022685155",
+            "num_sessions": "0.07643401",
+            "num_view": "0.102979444",
+            "num_cart": "0.26467314",
+            "view_to_cart_rate": "0.12720728",
+            "engagement_score": "0.048408404",
+            "session_events": "0.013144361",
+            "session_products": "0.022254765",
+            "session_avg_price": "0.016016454",
+            "session_duration_min": "0.027191509",
+            "product_views": "0.01887466",
+            "unique_viewers": "0.016590841",
+            "product_conversion_rate": "0.026007326"
+        }
+    }
+}
